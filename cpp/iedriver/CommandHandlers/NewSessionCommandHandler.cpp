@@ -786,13 +786,13 @@ bool NewSessionCommandHandler::ValidateCapabilities(
                 proxy_type != "direct" && 
                 proxy_type != "autodetect" && 
                 proxy_type != "system" && 
-                proxy_type != "manual") {
+                proxy_type != "Manual") {
               *error_message = "Invalid capabilities in " + 
                                capability_set_name + ": " + 
                                "a proxy type named " + proxy_type + 
                                " is specified, but proxy type must be " +
                                "'pac', 'direct', 'autodetect', 'system', " +
-                               "or 'manual'";
+                               "or 'Manual'";
               return false;
             }
             continue;
