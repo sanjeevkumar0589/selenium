@@ -786,7 +786,7 @@ bool NewSessionCommandHandler::ValidateCapabilities(
                 proxy_type != "direct" && 
                 proxy_type != "autodetect" && 
                 proxy_type != "system" && 
-                proxy_type != "manual") {
+                proxy_type != "Manual") {
               *error_message = "Invalid capabilities in " + 
                                capability_set_name + ": " + 
                                "a proxy type named " + proxy_type + 
@@ -882,7 +882,6 @@ bool NewSessionCommandHandler::ValidateCapabilities(
     return false;
   }
 
-  return true;
 }
 
 bool NewSessionCommandHandler::ValidateCapabilityType(
